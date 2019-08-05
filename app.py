@@ -91,7 +91,7 @@ def get_conversion_factor():
     units_val = keymap_replace(units, unit_word_hash)
     units_val = keymap_replace(units_val, unit_initials_hash)
     units_val = keymap_replace(units_val, unit_initial_hash)
-    factor = '%.14f' % eval(units_val)
+    factor = ('%.14f' % eval(units_val)).lstrip('0')
     unit_name =  keymap_replace(units, unit_name_word_hash)
     unit_name = keymap_replace(unit_name, unit_name_initials_hash)
     unit_name = keymap_replace(unit_name, unit_name_initial_hash)

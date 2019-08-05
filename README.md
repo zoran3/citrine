@@ -50,5 +50,3 @@ as are SI units themselves.
 ~~~
 git push heroku master
 ~~~
-
-*Web Service EndPoint*
